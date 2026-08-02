@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 — 小芽 Sprout</title>
+<meta name="description" content="小芽不收集任何信息。没有账号，没有服务器，不发起任何网络请求，一切都留在你自己的 iPhone 上。">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #FBF8F3;
+    --surface: #FFFFFF;
+    --ink: #1E2A24;
+    --ink60: #5C6B63;
+    --ink30: #98A69E;
+    --line: #ECE6DC;
+    --sprout: #34C48A;
+    --sprout-deep: #1E9E6B;
+    --shadow: 0 8px 24px rgba(30, 42, 36, 0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101511;
+      --surface: #1A211C;
+      --ink: #F2F5F1;
+      --ink60: #A9B5AE;
+      --ink30: #6F7C75;
+      --line: #26302A;
+      --sprout: #3FD79A;
+      --sprout-deep: #2CB37E;
+      --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont,
+                 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+                 "Segoe UI", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 32px 20px 56px; }
+  a { color: var(--sprout-deep); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:hover { color: var(--sprout); }
+  @media (prefers-color-scheme: dark) { a { color: var(--sprout); } }
+
+  .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 36px; text-decoration: none; color: inherit; }
+  .brand svg { width: 30px; height: 30px; flex: none; }
+  .brand span { font-size: 21px; font-weight: 700; letter-spacing: -0.01em; }
+  .mark .s1 { stop-color: #34C48A; }
+  .mark .s2 { stop-color: #1E9E6B; }
+  .mark .stem { stroke: #1E9E6B; }
+  .mark .dot { fill: #1E9E6B; }
+  @media (prefers-color-scheme: dark) {
+    .mark .s1 { stop-color: #3FD79A; }
+    .mark .s2 { stop-color: #2CB37E; }
+    .mark .stem { stroke: #2CB37E; }
+    .mark .dot { fill: #2CB37E; }
+  }
+
+  h1 { font-size: 29px; line-height: 1.35; font-weight: 700; margin: 0 0 8px; }
+  h2 { font-size: 20px; font-weight: 600; margin: 40px 0 10px; }
+  p { margin: 0 0 15px; }
+  .updated { color: var(--ink60); font-size: 15px; margin-bottom: 4px; }
+  .muted { color: var(--ink60); }
+  .small { font-size: 15px; }
+  .lang { font-size: 15px; margin: 0 0 28px; }
+
+  .short {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--sprout);
+    border-radius: 18px;
+    padding: 18px 22px;
+    box-shadow: var(--shadow);
+    margin: 24px 0 8px;
+  }
+  .short p:last-child { margin-bottom: 0; }
+
+  .nothing { font-size: 22px; font-weight: 700; color: var(--sprout-deep); margin: 0 0 15px; }
+  @media (prefers-color-scheme: dark) { .nothing { color: var(--sprout); } }
+
+  .perm {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  .perm h3 { font-size: 17px; font-weight: 700; margin: 0 0 8px; }
+  .perm dl { margin: 0; }
+  .perm dt {
+    font-size: 13px; font-weight: 600; letter-spacing: 0.05em;
+    color: var(--ink30); margin-top: 8px;
+  }
+  .perm dd { margin: 0; font-size: 16px; }
+
+  ul { margin: 0 0 15px; padding-left: 1.15em; }
+  li { margin-bottom: 6px; }
+  li::marker { color: var(--sprout); }
+
+  footer {
+    margin-top: 52px; padding-top: 24px; border-top: 1px solid var(--line);
+    font-size: 15px; color: var(--ink60);
+  }
+  footer nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 14px; }
+  footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="brand" href="../../">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="leaf" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop class="s1" offset="0%"/>
+          <stop class="s2" offset="100%"/>
+        </linearGradient>
+      </defs>
+      <path class="stem" d="M30.5 77.5 C 31.8 61.0, 45.2 45.2, 59.5 35.2"
+            fill="none" stroke-width="5.5" stroke-linecap="round"/>
+      <path d="M53.5 39.2 Q 76.7 37.1 86.2 15.8 Q 63.0 17.9 53.5 39.2 Z" fill="url(#leaf)"/>
+      <path d="M44.8 53.8 Q 33.8 39.5 15.8 40.8 Q 26.8 55.2 44.8 53.8 Z" fill="url(#leaf)"/>
+      <circle class="dot" cx="30.5" cy="77.5" r="10.4"/>
+    </svg>
+    <span>小芽 Sprout</span>
+  </a>
+
+  <h1>隐私政策</h1>
+  <p class="updated">最后更新：2026-08-02</p>
+  <p class="lang"><a href="../">English version</a></p>
+
+  <p><strong>小芽（Sprout: One Second a Day）</strong>（下称「本 App」）由 jiacheng wei（下称「我们」）开发。</p>
+
+  <h2>一句话版本</h2>
+  <div class="short">
+    <p>本 App 不收集任何信息。没有账号，没有服务器，不发起任何网络请求。你拍的视频、照片、写的备注和各项设置，都只在你自己的 iPhone 上。我们看不到，别人也看不到。</p>
+  </div>
+
+  <h2>App 存了什么，存在哪</h2>
+  <p>App 产生的一切内容都写在本机 App 私有存储区（iOS 应用沙盒）内：</p>
+  <ul>
+    <li>你拍摄或导入的视频片段与照片</li>
+    <li>由它们生成的缩略图</li>
+    <li>每条内容属于哪一天、一句话备注（可选）、属于哪本回忆册</li>
+    <li>你的设置（美颜档位、滤镜、提醒时间、片段时长等）</li>
+  </ul>
+  <p>这些内容不会被上传。没有云备份，没有同步，我们手上没有任何副本。</p>
+  <p class="small muted">有一点需要说清楚，因为这是被问得最多的问题：App 并没有把自己的文件排除在 iPhone 系统备份之外。所以如果你开着 iCloud 备份，或者把 iPhone 备份到电脑，这些备份由 iOS 制作、包含 App 数据，用它恢复一台新 iPhone 时，你记录的日子会一起过去。这些备份属于你和 Apple，我们既接触不到，也不参与其中。</p>
+
+  <h2>我们收集什么</h2>
+  <p class="nothing">什么都不收集。</p>
+  <p>我们不收集个人信息、使用数据、统计分析、崩溃日志、广告标识符、设备标识符、通讯录或位置。App 内没有任何统计 SDK、广告 SDK 或第三方 SDK，也不会建立网络连接。</p>
+
+  <h2>App 会申请哪些权限，为什么</h2>
+
+  <div class="perm">
+    <h3>相机</h3>
+    <dl>
+      <dt>用途</dt>
+      <dd>用来拍下你每天的 1–3 秒，或一张照片。画面在本机 GPU 上处理，直接写进 App 自己的存储区。</dd>
+      <dt>拒绝之后</dt>
+      <dd>App 内无法拍摄，但仍可以从相册补记。</dd>
+    </dl>
+  </div>
+
+  <div class="perm">
+    <h3>麦克风</h3>
+    <dl>
+      <dt>用途</dt>
+      <dd>若你保持「录制时收音」开启，录像时一并收音。可随时在设置里关闭。</dd>
+      <dt>拒绝之后</dt>
+      <dd>录制的视频没有声音。</dd>
+    </dl>
+  </div>
+
+  <div class="perm">
+    <h3>相册（读取）</h3>
+    <dl>
+      <dt>用途</dt>
+      <dd>仅在你主动选择「从相册补记」时使用。App 只读取你选中的那一个文件并复制进自己的存储区，不会浏览或索引你的相册。</dd>
+      <dt>拒绝之后</dt>
+      <dd>无法从相册补记，拍摄不受影响。</dd>
+    </dl>
+  </div>
+
+  <div class="perm">
+    <h3>相册（仅添加）</h3>
+    <dl>
+      <dt>用途</dt>
+      <dd>仅在你生成回忆片后点「存到相册」时使用，只写入一个视频文件。此权限不用于读取相册。</dd>
+      <dt>拒绝之后</dt>
+      <dd>回忆片不会存进相册，但仍可用系统分享。</dd>
+    </dl>
+  </div>
+
+  <div class="perm">
+    <h3>通知</h3>
+    <dl>
+      <dt>用途</dt>
+      <dd>若你开启每日提醒，用来发送提醒。提醒完全在本机排期，不经过任何服务器，也不使用推送服务。</dd>
+      <dt>拒绝之后</dt>
+      <dd>不会收到提醒，其余功能正常。</dd>
+    </dl>
+  </div>
+
+  <p>以上权限都可以在 <strong>iOS 设置 → 小芽</strong> 中查看或撤销。</p>
+
+  <h2>关于人脸检测</h2>
+  <p>美颜功能使用 Apple 系统自带的 Vision 框架，在当前这一帧画面里找到人脸的位置，让磨皮跟着脸走。这一过程完全在本机内存中逐帧完成，不保存任何人脸数据，不做人脸识别或身份比对，也不会有任何数据离开设备。在设置里关掉美颜总开关即可停止。</p>
+
+  <h2>关于共享</h2>
+  <p>我们不共享、不出售、不出租、不披露你的数据——因为我们根本没有。</p>
+  <p>当你点「存到相册」或「分享」时，后续由 iOS 接管：生成的视频会交给系统相册，或交给你在系统分享面板里选择的那个 App。此后如何处理，适用那个 App 自己的隐私政策，与本政策无关。</p>
+
+  <h2>关于儿童</h2>
+  <p>本 App 并非面向儿童设计，且不会收集任何人（无论年龄）的任何数据。用它记录孩子成长的家长请放心：所记录的一切都留在自己的设备上。</p>
+
+  <h2>如何删除数据</h2>
+  <ul>
+    <li>删除某一天：打开那一天，点垃圾桶图标。</li>
+    <li>删除整本回忆册及其内容：设置 → 点该回忆册 → 删除这本回忆册。</li>
+    <li>删除全部内容：设置 → 数据 → 清空全部数据。</li>
+    <li>连 App 一起删：卸载 App，iOS 会连同它的整个存储区一并删除。</li>
+  </ul>
+  <p>删除是立即且不可恢复的。因为我们没有副本，所以我们这边既无可删，也无从找回。重要的回忆请先导出成片并保存到相册。</p>
+
+  <h2>你的权利（GDPR、英国 GDPR、CCPA/CPRA、LGPD、日本 APPI、韩国 PIPA 及类似法律）</h2>
+  <p>这些法律赋予你访问、更正、导出、删除个人数据以及反对处理的权利，其对象是「企业所持有的关于你的数据」。我们不持有任何此类数据，因此无从代你访问、更正、导出或删除。你的全部内容本就在你自己手里、在你自己的设备上，随时可按上文步骤自行删除。按 CCPA/CPRA 的定义，我们不出售也不共享个人信息。</p>
+
+  <h2>政策变更</h2>
+  <p>若未来版本改变了本 App 存储或发送的内容，我们会在该版本发布前更新本页并修改顶部的「最后更新」日期。只要本 App 不发起网络请求，本政策就不会有实质变化。</p>
+
+  <h2>联系方式</h2>
+  <p><a href="mailto:weijiacheng34@163.com">weijiacheng34@163.com</a></p>
+
+  <footer>
+    <nav>
+      <a href="../../">首页</a>
+      <a href="../../support/">支持</a>
+      <a href="../">Privacy Policy (English)</a>
+      <a href="mailto:weijiacheng34@163.com">weijiacheng34@163.com</a>
+    </nav>
+    <p>小芽 Sprout: One Second a Day — 开发者 jiacheng wei。</p>
+  </footer>
+
+</div>
+</body>
+</html>

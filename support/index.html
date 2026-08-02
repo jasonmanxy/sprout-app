@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Sprout: One Second a Day</title>
+<meta name="description" content="Answers to common questions about Sprout, and how to get in touch.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #FBF8F3;
+    --surface: #FFFFFF;
+    --ink: #1E2A24;
+    --ink60: #5C6B63;
+    --ink30: #98A69E;
+    --line: #ECE6DC;
+    --sprout: #34C48A;
+    --sprout-deep: #1E9E6B;
+    --shadow: 0 8px 24px rgba(30, 42, 36, 0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101511;
+      --surface: #1A211C;
+      --ink: #F2F5F1;
+      --ink60: #A9B5AE;
+      --ink30: #6F7C75;
+      --line: #26302A;
+      --sprout: #3FD79A;
+      --sprout-deep: #2CB37E;
+      --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", system-ui, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 32px 20px 56px; }
+  a { color: var(--sprout-deep); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:hover { color: var(--sprout); }
+  @media (prefers-color-scheme: dark) { a { color: var(--sprout); } }
+
+  .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 36px; text-decoration: none; color: inherit; }
+  .brand svg { width: 30px; height: 30px; flex: none; }
+  .brand span { font-size: 21px; font-weight: 700; letter-spacing: -0.01em; }
+  .mark .s1 { stop-color: #34C48A; }
+  .mark .s2 { stop-color: #1E9E6B; }
+  .mark .stem { stroke: #1E9E6B; }
+  .mark .dot { fill: #1E9E6B; }
+  @media (prefers-color-scheme: dark) {
+    .mark .s1 { stop-color: #3FD79A; }
+    .mark .s2 { stop-color: #2CB37E; }
+    .mark .stem { stroke: #2CB37E; }
+    .mark .dot { fill: #2CB37E; }
+  }
+
+  h1 { font-size: 30px; line-height: 1.3; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 12px; }
+  h2 { font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;
+       color: var(--ink60); margin: 44px 0 8px; }
+  h3 { font-size: 18px; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; }
+  p:last-child { margin-bottom: 0; }
+  .lede { font-size: 18px; color: var(--ink60); margin-bottom: 8px; }
+  .muted { color: var(--ink60); }
+  .small { font-size: 15px; }
+
+  .q {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 20px 22px;
+    box-shadow: var(--shadow);
+    margin: 14px 0;
+  }
+  .path {
+    font-weight: 600;
+    color: var(--sprout-deep);
+    white-space: nowrap;
+  }
+  @media (prefers-color-scheme: dark) { .path { color: var(--sprout); } }
+
+  ul { margin: 0 0 14px; padding-left: 1.15em; }
+  li { margin-bottom: 6px; }
+  li::marker { color: var(--sprout); }
+
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 22px;
+    box-shadow: var(--shadow);
+    margin-top: 14px;
+  }
+  .contact a.mail { font-size: 19px; font-weight: 600; }
+
+  footer {
+    margin-top: 52px; padding-top: 24px; border-top: 1px solid var(--line);
+    font-size: 15px; color: var(--ink60);
+  }
+  footer nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 14px; }
+  footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="brand" href="../">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="leaf" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop class="s1" offset="0%"/>
+          <stop class="s2" offset="100%"/>
+        </linearGradient>
+      </defs>
+      <path class="stem" d="M30.5 77.5 C 31.8 61.0, 45.2 45.2, 59.5 35.2"
+            fill="none" stroke-width="5.5" stroke-linecap="round"/>
+      <path d="M53.5 39.2 Q 76.7 37.1 86.2 15.8 Q 63.0 17.9 53.5 39.2 Z" fill="url(#leaf)"/>
+      <path d="M44.8 53.8 Q 33.8 39.5 15.8 40.8 Q 26.8 55.2 44.8 53.8 Z" fill="url(#leaf)"/>
+      <circle class="dot" cx="30.5" cy="77.5" r="10.4"/>
+    </svg>
+    <span>Sprout</span>
+  </a>
+
+  <h1>Support</h1>
+  <p class="lede">The questions that come up most often. If yours isn't here, write to me — the address is at the bottom, and it reaches a person.</p>
+
+  <h2>Your days, and keeping them</h2>
+
+  <div class="q">
+    <h3>I'm getting a new phone. What happens to my days?</h3>
+    <p>Sprout has no cloud and no account, so it cannot pull your days down onto a new phone by itself. There are two ways they travel:</p>
+    <ul>
+      <li><strong>An iPhone backup.</strong> Sprout keeps its files in the app's own storage area, and does not exclude them from backup. So if you set up the new iPhone by restoring from an iCloud backup or from a computer backup that includes app data, Sprout's days come across with everything else. That backup belongs to you and Apple — it isn't ours, and we have no way to see it or fix it if it goes wrong.</li>
+      <li><strong>The exported film.</strong> Export the reel and save it to Photos before you switch. Your Photos library moves to a new phone under its own steam, and the film is a plain video file that will still play in ten years.</li>
+    </ul>
+    <p>If you are about to erase the old phone, do the export first. It takes a minute and it is the one copy nothing can take away.</p>
+  </div>
+
+  <div class="q">
+    <h3>Why isn't there a cloud backup?</h3>
+    <p>Because adding one would mean adding an account, a server, and a copy of your videos held by someone other than you. Sprout is built so that no such copy exists — it makes no network requests at all. The cost of that is real and it is yours to carry: delete the app and everything in it is gone, and nobody has a spare. Export what matters.</p>
+  </div>
+
+  <div class="q">
+    <h3>I deleted something by mistake. Can I get it back?</h3>
+    <p>No. Deleting a day, deleting an album, and erasing everything are all immediate and permanent, and there is no copy anywhere else to restore from. Each one asks you to confirm first, which is the only safety net there is.</p>
+  </div>
+
+  <h2>Making the film</h2>
+
+  <div class="q">
+    <h3>How do I export the film?</h3>
+    <p>On the home screen, tap <span class="path">All</span> next to Reel to open the timeline, then <span class="path">Export</span> at the top.</p>
+    <p>Choose a range — everything, this month, or the last 30 days — and whether you want the date in the corner, opening and closing cards, and a cross-dissolve between days. Tap <span class="path">Make the reel</span>, then either <span class="path">Save to Photos</span> or <span class="path">Share</span> to hand it straight to someone.</p>
+    <p>The result is an ordinary video file at 1080 × 1920. Longer films take longer to build; the progress bar is honest, and you can cancel.</p>
+  </div>
+
+  <div class="q">
+    <h3>Can I watch it without exporting?</h3>
+    <p>Yes. The play button on the home screen, and <span class="path">Play the reel</span> at the top of the timeline, both play what you have so far. Nothing is rendered — you can do it as often as you like.</p>
+  </div>
+
+  <div class="q">
+    <h3>Why is the cross-dissolve off by default?</h3>
+    <p>A hard cut between days has more rhythm, and the jump is the point. Turn the dissolve on in <span class="path">Settings → Export</span> if you prefer it soft.</p>
+  </div>
+
+  <h2>Days you missed</h2>
+
+  <div class="q">
+    <h3>How do I fill in a day I missed?</h3>
+    <p>Every empty date carries a <span class="muted">+</span>, however far back it is. Tap it — in the seven-day row on the home screen, or on any empty square in the timeline calendar — and pick something from your photo library.</p>
+    <p>A photo goes straight in. A video gives you a filmstrip: drag it to choose which stretch to keep, then tap <span class="path">Keep it</span>. The length of that stretch is whatever you've set as your longest clip.</p>
+    <p>There is no time limit. You can fill in a day from two years ago.</p>
+  </div>
+
+  <div class="q">
+    <h3>I filled in a day before my start date, and day one moved.</h3>
+    <p>That's deliberate. If you fill in the day a baby was born, that day should be day one — not a negative number. The count adjusts to match.</p>
+  </div>
+
+  <div class="q">
+    <h3>Why didn't my filled-in day extend my streak?</h3>
+    <p>Filled-in days count towards your total days, but not towards the streak. The streak only counts days you recorded on the day itself, so that it stays worth something. Nothing turns red, and nothing scolds you for a gap.</p>
+  </div>
+
+  <div class="q">
+    <h3>The photo picker is stuck on "Loading…"</h3>
+    <p>That is the system picker, not Sprout. Close the sheet and try again; if a particular item never loads, it is usually still downloading from iCloud Photos, and opening it once in the Photos app makes it available.</p>
+  </div>
+
+  <h2>Recording</h2>
+
+  <div class="q">
+    <h3>I recorded today, but I want a different take.</h3>
+    <p>Just record again. The previous take isn't overwritten — it waits underneath as an alternate, and you can swap back to it with one tap. A few alternates are kept for the current day; the next day they clear themselves out and only the one you chose remains.</p>
+  </div>
+
+  <div class="q">
+    <h3>How long can a clip be?</h3>
+    <p>Between one and three seconds. Set your maximum under <span class="path">Settings → Capture → Longest clip</span>. A tap on the shutter takes a photo instead; photos hold for a little over a second in the film.</p>
+  </div>
+
+  <div class="q">
+    <h3>How do I turn the smoothing off — or up?</h3>
+    <p>While recording, tap the ✨ button for the panel: Off, Natural, Refined, Custom, plus five sliders — Smooth, Glow, Slim, Eyes, Sharpen. Anything you adjust is kept as your Custom preset. Slim and Eyes sit at zero in every preset; they only move if you move them.</p>
+    <p>To get rid of the panel altogether, turn <span class="path">Settings → Capture → Beauty</span> off. The colour looks still work.</p>
+    <p>All of it runs on this phone's GPU, and the viewfinder shows exactly what gets recorded — there is no surprise afterwards.</p>
+  </div>
+
+  <div class="q">
+    <h3>Can I record without sound?</h3>
+    <p>Yes — turn off <span class="path">Settings → Capture → Record sound</span>. Sprout then won't use the microphone at all.</p>
+  </div>
+
+  <h2>Albums and reminders</h2>
+
+  <div class="q">
+    <h3>Can I track more than one thing?</h3>
+    <p>Yes. <span class="path">Settings → New Seed</span> starts another album — a baby, a plant, yourself, a pet, or anything else. Each one keeps its own film, its own reminder and its own day one. If you only ever make one, the album switcher never appears.</p>
+    <p>There are no folders, no tags and no search. This isn't a place to organise things.</p>
+  </div>
+
+  <div class="q">
+    <h3>How do I set a daily reminder?</h3>
+    <p><span class="path">Settings</span> → tap the album → <span class="path">Daily reminder</span>, and pick a time. It's scheduled on your phone, with no push service involved, and it skips any day you've already recorded. You'll need to allow notifications the first time.</p>
+  </div>
+
+  <div class="q">
+    <h3>How do I delete things?</h3>
+    <ul>
+      <li><strong>One day:</strong> open it and tap the bin icon.</li>
+      <li><strong>An album and everything in it:</strong> <span class="path">Settings</span> → tap the album → <span class="path">Delete this Seed</span>.</li>
+      <li><strong>Everything:</strong> <span class="path">Settings → Data → Erase everything</span>.</li>
+      <li><strong>Everything, including the app:</strong> uninstall it. iOS removes the app's whole storage area with it.</li>
+    </ul>
+    <p class="small muted">Same page shows how much space your clips are using, under Storage used.</p>
+  </div>
+
+  <h2>Practicalities</h2>
+
+  <div class="q">
+    <h3>What do I need to run it?</h3>
+    <p>An iPhone running iOS 17 or later. Portrait only. There is no iPad version and no Mac version.</p>
+  </div>
+
+  <div class="q">
+    <h3>Does it cost anything after I've installed it?</h3>
+    <p>No. There is no subscription and there are no in-app purchases.</p>
+  </div>
+
+  <div class="q">
+    <h3>What data does the app collect?</h3>
+    <p>None. No analytics, no crash reports, no identifiers, no third-party code of any kind, and no network requests. The <a href="../privacy/">privacy policy</a> spells out exactly what is stored and where — it's also available <a href="../privacy/zh/">in Chinese</a>.</p>
+  </div>
+
+  <h2>Still stuck?</h2>
+  <div class="contact">
+    <p><a class="mail" href="mailto:weijiacheng34@163.com">weijiacheng34@163.com</a></p>
+    <p class="small muted">Sprout is made by one person, so a reply can take a few days. Bug reports are read carefully: tell me your iPhone model, your iOS version, and what you did just before it went wrong.</p>
+  </div>
+
+  <footer>
+    <nav>
+      <a href="../">Home</a>
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="../privacy/zh/">隐私政策（简体中文）</a>
+      <a href="mailto:weijiacheng34@163.com">weijiacheng34@163.com</a>
+    </nav>
+    <p>Sprout: One Second a Day — made by jiacheng wei.</p>
+  </footer>
+
+</div>
+</body>
+</html>

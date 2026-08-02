@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sprout: One Second a Day</title>
+<meta name="description" content="Record one to three seconds a day. Sprout strings them into a film. Everything stays on your iPhone — no account, no cloud, no network requests.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #FBF8F3;
+    --surface: #FFFFFF;
+    --ink: #1E2A24;
+    --ink60: #5C6B63;
+    --ink30: #98A69E;
+    --line: #ECE6DC;
+    --sprout: #34C48A;
+    --sprout-deep: #1E9E6B;
+    --sun: #FFC46B;
+    --shadow: 0 8px 24px rgba(30, 42, 36, 0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101511;
+      --surface: #1A211C;
+      --ink: #F2F5F1;
+      --ink60: #A9B5AE;
+      --ink30: #6F7C75;
+      --line: #26302A;
+      --sprout: #3FD79A;
+      --sprout-deep: #2CB37E;
+      --sun: #FFCE80;
+      --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", system-ui, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 32px 20px 56px; }
+  a { color: var(--sprout-deep); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:hover { color: var(--sprout); }
+  @media (prefers-color-scheme: dark) { a { color: var(--sprout); } }
+
+  .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+  .brand svg { width: 30px; height: 30px; flex: none; }
+  .brand span { font-size: 21px; font-weight: 700; letter-spacing: -0.01em; }
+  .mark .s1 { stop-color: #34C48A; }
+  .mark .s2 { stop-color: #1E9E6B; }
+  .mark .stem { stroke: #1E9E6B; }
+  .mark .dot { fill: #1E9E6B; }
+  @media (prefers-color-scheme: dark) {
+    .mark .s1 { stop-color: #3FD79A; }
+    .mark .s2 { stop-color: #2CB37E; }
+    .mark .stem { stroke: #2CB37E; }
+    .mark .dot { fill: #2CB37E; }
+  }
+
+  h1 { font-size: 34px; line-height: 1.25; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 16px; }
+  h2 { font-size: 21px; font-weight: 600; margin: 44px 0 12px; letter-spacing: -0.01em; }
+  h3 { font-size: 17px; font-weight: 600; margin: 24px 0 6px; }
+  p { margin: 0 0 16px; }
+  .lede { font-size: 19px; color: var(--ink60); margin-bottom: 28px; }
+  .muted { color: var(--ink60); }
+  .small { font-size: 15px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 20px 22px;
+    box-shadow: var(--shadow);
+    margin: 24px 0;
+  }
+  .card h3 { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 16px; padding-left: 1.15em; }
+  li { margin-bottom: 8px; }
+  li::marker { color: var(--sprout); }
+
+  .steps { list-style: none; padding: 0; margin: 24px 0; counter-reset: step; }
+  .steps li {
+    position: relative; padding-left: 44px; margin-bottom: 18px; counter-increment: step;
+  }
+  .steps li::before {
+    content: counter(step);
+    position: absolute; left: 0; top: 2px;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: rgba(52, 196, 138, 0.16);
+    color: var(--sprout-deep);
+    font-size: 14px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  @media (prefers-color-scheme: dark) { .steps li::before { color: var(--sprout); } }
+  .steps strong { display: block; }
+
+  .facts { list-style: none; padding: 0; margin: 20px 0 0; }
+  .facts li {
+    display: flex; gap: 10px; align-items: baseline;
+    padding: 10px 0; border-bottom: 1px solid var(--line); margin: 0;
+  }
+  .facts li:last-child { border-bottom: none; }
+  .facts .k { color: var(--ink60); font-size: 15px; min-width: 8.5rem; flex: none; }
+
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line);
+    font-size: 15px; color: var(--ink60);
+  }
+  footer nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 14px; }
+  footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="leaf" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop class="s1" offset="0%"/>
+          <stop class="s2" offset="100%"/>
+        </linearGradient>
+      </defs>
+      <path class="stem" d="M30.5 77.5 C 31.8 61.0, 45.2 45.2, 59.5 35.2"
+            fill="none" stroke-width="5.5" stroke-linecap="round"/>
+      <path d="M53.5 39.2 Q 76.7 37.1 86.2 15.8 Q 63.0 17.9 53.5 39.2 Z" fill="url(#leaf)"/>
+      <path d="M44.8 53.8 Q 33.8 39.5 15.8 40.8 Q 26.8 55.2 44.8 53.8 Z" fill="url(#leaf)"/>
+      <circle class="dot" cx="30.5" cy="77.5" r="10.4"/>
+    </svg>
+    <span>Sprout</span>
+  </div>
+
+  <h1>One second a day.<br>In a year, a film.</h1>
+  <p class="lede">Sprout is an iPhone app for recording one to three seconds of your day — or taking a single photo — and letting the days join themselves into a film you can watch whenever you like.</p>
+
+  <p>There is nothing to edit and nothing to upload. You open it, hold the shutter, and close it again. The film already exists; it just gets one day longer.</p>
+
+  <h2>What it's for</h2>
+  <p>Things that change too slowly to notice, and are startling to watch back. A baby learning to sit, then stand, then run. A plant on the windowsill through four seasons. Yourself, after the run, every evening.</p>
+  <p>One day on its own is worth almost nothing. Four hundred of them in a row will stop you where you stand.</p>
+
+  <h2>How a day works</h2>
+  <ol class="steps">
+    <li><strong>Tap or hold.</strong> A tap takes one photo. Holding records up to three seconds. Shoot another if you want — the previous take waits underneath and you can swap back with one tap.</li>
+    <li><strong>Miss a day, fill it in.</strong> Every empty date has a <span class="muted">+</span> on it, however far back. Pull something in from your photo library; for a video you drag along a filmstrip to choose which seconds to keep.</li>
+    <li><strong>Watch it, or export it.</strong> Press play any time. Export the reel as a video to your Photos library, or hand it to whoever it's for.</li>
+  </ol>
+
+  <h2>It never leaves your phone</h2>
+  <div class="card">
+    <p>No account. No sign-in. No cloud. No analytics. No ads. No third-party code of any kind. Sprout makes no network requests at all — not for backup, not for crash reports, not for anything.</p>
+    <p>That cuts both ways, and it is worth knowing before you start: delete the app and it is all gone, and nobody has a copy to hand back to you. Export the films that matter.</p>
+  </div>
+  <p class="small muted">Face smoothing, if you use it, runs on this phone's GPU. Face position is found with Apple's on-device Vision framework, frame by frame, in memory. Nothing about your face is stored or sent anywhere. Full details are in the <a href="privacy/">privacy policy</a>.</p>
+
+  <h2>Good to know</h2>
+  <ul class="facts">
+    <li><span class="k">Requires</span><span>iPhone, iOS 17 or later</span></li>
+    <li><span class="k">Orientation</span><span>Portrait only</span></li>
+    <li><span class="k">Recorded at</span><span>1080 × 1920, every clip</span></li>
+    <li><span class="k">Cost</span><span>No subscription, no in-app purchases</span></li>
+    <li><span class="k">Albums</span><span>As many as you like, each with its own film, reminder and day one</span></li>
+    <li><span class="k">Reminders</span><span>Optional, per album, and skipped on days you've already recorded</span></li>
+  </ul>
+
+  <h2>Questions</h2>
+  <p>The <a href="support/">support page</a> answers the common ones — moving to a new phone, exporting, filling in past days. Anything it doesn't cover, write to <a href="mailto:weijiacheng34@163.com">weijiacheng34@163.com</a>.</p>
+
+  <footer>
+    <nav>
+      <a href="support/">Support</a>
+      <a href="privacy/">Privacy Policy</a>
+      <a href="privacy/zh/">隐私政策（简体中文）</a>
+      <a href="mailto:weijiacheng34@163.com">weijiacheng34@163.com</a>
+    </nav>
+    <p>Sprout: One Second a Day — made by jiacheng wei.</p>
+  </footer>
+
+</div>
+</body>
+</html>
